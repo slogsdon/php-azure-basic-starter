@@ -44,12 +44,18 @@ $ bash provision.sh
 Created resource group 'azure-basic-starter'
 Created web app 'azure-basic-starter-4524'
 Added Azure deployment URL as a remote
-Copied 'https://azure-basic-starter-4524.azurewebsites.net' to the system clipboard
+
 Deploy via:
 
     git add .
     git commit -m "add files"
     git push -u azure master
+
+Once deployed, 'azure-basic-starter-4524' will be accessible at:
+
+    https://azure-basic-starter-4524.azurewebsites.net
+
+Copied 'https://azure-basic-starter-4524.azurewebsites.net' to the system clipboard
 ```
 
 ## License
