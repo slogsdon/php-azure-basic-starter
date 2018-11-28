@@ -1,0 +1,15 @@
+{
+    "name": "slogsdon/azure-basic-starter",
+    "description": "A basic PHP starter project for launching an Azure App Service resource with Azure CLI",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shane Logsdon",
+            "email": "shane@shanelogsdon.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    }
+}
