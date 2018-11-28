@@ -5,7 +5,7 @@
 ### Features
 
 - Scripted Azure App Service provisioning
-- Scripted Kudu deploy on Git push
+- Customized Kudu deploys on Git push
 
 ### Reasoning
 
