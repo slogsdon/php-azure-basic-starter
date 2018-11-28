@@ -58,6 +58,48 @@ Once deployed, 'azure-basic-starter-4524' will be accessible at:
 Copied 'https://azure-basic-starter-4524.azurewebsites.net' to the system clipboard
 ```
 
+Pushing to the `azure` remote, Azure / Kudu will display notes during the deployment:
+
+```
+$ git push azure master
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (15/15), 466.75 KiB | 5.02 MiB/s, done.
+Total 15 (delta 3), reused 0 (delta 0)
+remote: Updating branch 'master'.
+remote: Updating submodules.
+remote: Preparing deployment for commit id 'fb3f0264f8'.
+remote: Running custom deployment command...
+remote: Running deployment command...
+remote: Handling node.js deployment.
+remote: Creating app_offline.htm
+remote: KuduSync.NET from: 'D:\home\site\repository' to: 'D:\home\site\wwwroot'
+remote: Copying file: '.gitignore'
+remote: Copying file: 'composer.json'
+remote: Copying file: 'composer.lock'
+remote: Copying file: 'composer.phar'
+remote: Copying file: 'LICENSE'
+remote: Copying file: 'README.md'
+remote: Copying file: 'public\index.php'
+remote: Deleting app_offline.htm
+remote: Looking for app.js/server.js under site root.
+remote: The package.json file does not specify node.js engine version constraints.
+remote: The node.js application will run with the default node.js version 8.11.1.
+remote: Selected npm version 5.6.0
+remote: Missing server.js/app.js files, web.config is not generated
+remote: Loading composer repositories with package information
+remote: Installing dependencies (including require-dev) from lock file
+remote: Nothing to install or update
+remote: Generating autoload files
+remote: Finished successfully.
+remote: Running post deployment command(s)...
+remote: Deployment successful.
+To https://azure-basic-starter-4524.scm.azurewebsites.net/azure-basic-starter-4524.git
+   04679c2..fb3f026  master -> master
+```
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
