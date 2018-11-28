@@ -32,14 +32,14 @@ APP_NAME="${RESOURCE_GROUP_NAME}-${RANDOM}"
 
 ## STOP CHANGES
 
-# Create a resource group.
+# Create a resource group
 az group create \
   --name $RESOURCE_GROUP_NAME \
   --location "$RESOURCE_GROUP_LOCATION" \
   > /dev/null 2>&1
 echo "Created resource group '$RESOURCE_GROUP_NAME'"
 
-# Create a web app.
+# Create a web app
 az webapp create \
   --name $APP_NAME \
   --resource-group $RESOURCE_GROUP_NAME \
@@ -48,7 +48,7 @@ az webapp create \
   > /dev/null 2>&1
 echo "Created web app '$APP_NAME'"
 
-# Update document root
+# Update the document root
 az resource update \
   --name web \
   --resource-group $RESOURCE_GROUP_NAME \
@@ -67,7 +67,7 @@ APP_DEPLOYMENT_URL=$(
     --output tsv
   )
 
-# Add the Azure remote to your local Git respository
+# Add the Azure remote to your local Git repository
 git remote add azure $APP_DEPLOYMENT_URL > /dev/null 2>&1
 echo "Added Azure deployment URL as a remote"
 
